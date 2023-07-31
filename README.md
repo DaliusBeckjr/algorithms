@@ -4,4 +4,4 @@
 
  this is to help me get better at learning and understanding how to code in two different languages and be better at problem solving in general to specific problems and situations.
 
- quote: Practice makes perfect. After a long time of practicing, our work will become natural, skillfull, swift, and steady. -Bruce Lee
+ > Practice makes perfect. After a long time of practicing, our work will become natural, skillfull, swift, and steady. -Bruce Lee
