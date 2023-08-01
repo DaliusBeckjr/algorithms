@@ -37,6 +37,9 @@ If 2 given numbers represent your birth month and day in either order, log "How 
 Leap Year
 
 Write a function that determines whether a given year is a leap year. If a year is divisible by four, it is a leap year, unless it is divisible by 100. However, if it is divisible by 400, then it is.
+
+explanation: 
+in this function, we check if the year is divisible by 4 using year % 4 == 0. If it is divisible by 4, we proceed to check if it is also divisible by 100 using year % 100 == 0. If it is divisible by 100, we then check if it is divisible by 400 using year % 400 == 0. If it is divisible by 400, then it is a leap year, and we return True. Otherwise, if it is divisible by 4 but not by 100, it is also a leap year, and we return True. In all other cases, we return False, indicating that the year is not a leap year.
 ###
 <br />
 
