@@ -28,7 +28,7 @@ function loopty_loop() {
     }
 }
 
-console.log(loopty_loop());
+// console.log(loopty_loop());
 
 
 // Don’t Worry, Be Happy
@@ -38,8 +38,8 @@ console.log(loopty_loop());
 // note: this is a for loop if we are going to call this 98 times in the console
 // I think we would have to do the .length() function for this one or maybe not...
 function beCheerful() {
-    for(let i = 'good morning'; i<= 98; i++ ) {
-        console.log(i)
+    for (let i = 1; i <= 98; i++) {
+        console.log("good morning!");
     }
 }
 
