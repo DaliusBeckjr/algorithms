@@ -1,3 +1,5 @@
+import math
+
 # complete the solution so that it reverses the string passed into it. 
 # example 'world' -> 'dlrow'
 
@@ -48,3 +50,34 @@ def str_to_arr(str):
 # print(str_to_arr("hello world"))
 # str_to_arr(" ")
 # print( str_to_arr(" "))
+
+# def square_sum(n):
+#     arr = n
+#     sum = 0
+
+#     for i in range(0, len(arr)):
+#         sum = sum + arr[i]**2
+#         print(sum)
+#         return sum
+
+# square_sum([1,5,6])
+def square_sum(numbers):
+    # if not isinstance(n, list):
+    #     print("Input is not a list")
+    #     return
+    
+    # arr = n
+    # total_sum = 0
+
+    # for num in arr:
+    #     squared_num = num ** 2
+    #     total_sum += squared_num
+    
+    # print(total_sum)
+    sum = 0
+    for n in numbers:
+        sum = sum + n*n
+        print(sum)
+    return sum
+
+square_sum([1, 5, 6])
