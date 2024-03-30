@@ -150,4 +150,27 @@ def sum_of_nums():
     print(total_sum)  # Print the final sum
 
 # Call the function to calculate and print the sum
-sum_of_nums()
+# sum_of_nums()
+
+# Convert number to a reverse array of digits
+# Given a random non-negative number, you have to return the digits of this number within an array in reverse order.
+
+def arr_in_reverse(num: int):
+    if num < 0:
+        print("number must be a positive")
+        return 
+    
+    # res = list(map(int, str(num))[::-1])
+    # res.reverse()
+    # print(res)
+    # return res
+    
+    # using list comprehension
+    # to convert numbers into a list of integers
+    res = [int(x) for x in str(num)]
+    # using the slice notation to reverse the array
+    res = res[::-1]
+    print(res)
+    return res
+
+arr_in_reverse(300)
