@@ -173,4 +173,31 @@ def arr_in_reverse(num: int):
     print(res)
     return res
 
-arr_in_reverse(300)
+# arr_in_reverse(300)
+
+
+
+def remove_every_other(arr):
+    new_list = []
+    for i in range( len(arr) ):
+        if i % 2 == 0:
+            new_list.append(new_list[i])
+        print(arr)
+
+my_arr = [1,2,3,4,5,6]
+# remove_every_other(my_arr)
+
+# beginner lost without a map
+def maps(a):
+    if not isinstance(a, list):
+        print("please return a list")
+        return []
+
+    new_list = []
+    for num in a:
+        res = num * 2
+        new_list.append(res)
+    print(new_list)
+    return new_list
+
+maps([0,1,2,3,4,5])
