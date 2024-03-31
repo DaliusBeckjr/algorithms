@@ -187,7 +187,7 @@ def remove_every_other(arr):
 my_arr = [1,2,3,4,5,6]
 # remove_every_other(my_arr)
 
-# beginner lost without a map
+# beginner lost without a map sat Mar 30 2024
 def maps(a):
     if not isinstance(a, list):
         print("please return a list")
