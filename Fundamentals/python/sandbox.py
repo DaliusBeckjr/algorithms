@@ -200,4 +200,27 @@ def maps(a):
     print(new_list)
     return new_list
 
-maps([0,1,2,3,4,5])
+# maps([0,1,2,3,4,5])
+
+
+
+# Define a function that removes duplicates from an array of non negative 
+# numbers and returns it as a result.
+
+# The order of the sequence has to stay the same.
+
+def distinct(seq):
+    # new_seq = list(set(seq))
+    # print(new_seq)
+    res = []
+    [res.append(x) for x in seq if x not in res]
+    print(sorted(res))
+    # prints [1,5,3,6] but wondering if i can also make the list in order 
+    # using the sorted function "sorted()" we can organize and can specify
+    # the list from ascending and decending order
+    # sorted(iterable, key=key, reverse=reverse) 
+    # reverse -> Optional. A Boolean. False will sort ascending, True will sort descending. Default is False
+    # key -> Optional. A Function to execute to decide the order. Default is None
+    
+
+distinct([1, 5, 3, 6, 3, 5, 6, 1])
