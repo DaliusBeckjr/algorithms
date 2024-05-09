@@ -1,4 +1,5 @@
 import math
+from typing import List
 
 # complete the solution so that it reverses the string passed into it. 
 # example 'world' -> 'dlrow'
@@ -223,4 +224,58 @@ def distinct(seq):
     # key -> Optional. A Function to execute to decide the order. Default is None
     
 
-distinct([1, 5, 3, 6, 3, 5, 6, 1])
+# distinct([1, 5, 3, 6, 3, 5, 6, 1])
+
+
+# time complexity: O(n^2)
+# space complexity: O(n)
+# all we are recieving is a string of numbers
+
+def high_and_low(numbers : str) -> str:
+    # converted string into a list of characters
+    # hi_and_lo = list(numbers)
+    
+    # Clean up the input string and split it into individual numbers
+    hi_and_lo_list = numbers.split()
+    # output 8 3 -5 42 -1 0 0 -9 4 7 4 -4
+    # print(hi_an_lo)
+    
+    # we now have to append all og our duplicates in the list
+    # res = []
+    # for i in hi_an_lo:
+    #     if i not in res:
+    #         res.append(i)
+    # print(res)
+    
+    # using a naive method by looping through the list
+    # to make every number in the list into an integer
+    for i in range(0, len(hi_and_lo_list)):
+        hi_and_lo_list[i] = int(hi_and_lo_list[i])
+    # output [1,2,3,4,5]
+    
+    # print(hi_and_lo)
+
+    new_list = f"{max(hi_and_lo_list)} {min(hi_and_lo_list)}"
+    print(new_list)
+
+    return new_list
+
+
+
+# high_and_low("8 3 -5 42 -1 0 0 -9 4 7 4 -4")
+
+
+def reverseString(self, s: List[str]) -> None:
+        """
+        Do not return anything, modify s in-place instead.
+        """
+        
+        reverse_str = s[::-1]
+        print (reverse_str)
+        
+
+
+def reverseVowels(s: str) -> str:
+        s = list(s)
+        
+reverseVowels("hello")

@@ -29,7 +29,7 @@ some_list = [1,2,3,4,5]
 .pop() -> removes and returns the last element from the list 
 .reverse() -> reverses the order of elements in the list
 .remove() -> searches list for the value that you want to remove
-dont have a .silce()..we have [::] ->
+dont have a .slice()..we have [::] ->
 syntax: sequence[start:stop:step]
 
 len()
